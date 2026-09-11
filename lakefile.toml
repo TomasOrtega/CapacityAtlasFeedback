@@ -1,0 +1,20 @@
+name = "CapacityAtlasFeedback"
+version = "0.1.0"
+defaultTargets = ["CapacityAtlasFeedback", "capacity_feedback_audit"]
+
+[leanOptions]
+autoImplicit = false
+
+[[lean_lib]]
+name = "CapacityAtlasFeedback"
+
+[[lean_exe]]
+name = "capacity_feedback_audit"
+root = "CapacityAtlasFeedback.Audit"
+supportInterpreter = true
+
+[[require]]
+name = "CapacityAtlas"
+git = "https://github.com/TomasOrtega/CapacityAtlas.git"
+rev = "c0d665982bab3c4840bac511e950cdf3fc48b50c"
+subDir = "lean"
